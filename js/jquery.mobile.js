@@ -414,7 +414,7 @@
 
 		//if url is a string
 		if( url ){
-			to = $( "[id='" + url + "']" ),
+			to = $( "[id='" + url.split('?')[0] + "']" ),
 			fileUrl = getFileURL(url);
 		}
 		else{ //find base url of element, if avail
