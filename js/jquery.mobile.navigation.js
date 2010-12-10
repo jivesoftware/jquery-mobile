@@ -267,7 +267,7 @@
 
 		//if url is a string
 		if( url ){
-			to = $( "[data-url='" + url + "']" );
+			to = $( "[data-url='" + url.split('?')[0] + "']" );
 			fileUrl = path.getFilePath(url);
 		}
 		else{ //find base url of element, if avail
